@@ -1,0 +1,1 @@
+const sidebar=document.querySelector("aside"),blur=document.querySelector(".bg-blur");function toggleSidebar(e){e?(blur.style.display="block",setTimeout((()=>{blur.style.background="rgba(0,0,0,0.6)",sidebar.style.right="-1%"}),1)):(sidebar.style.right="-100%",blur.style.background="rgba(0,0,0,0)",setTimeout((()=>{blur.style.display="none"}),300))}

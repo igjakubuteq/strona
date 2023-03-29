@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pl">
+    <style>[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid] {display: none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>KingMc.PL | Serwer minecraft</title>
+    <meta name="description" content="KingMc.PL - Serwer minecraft w którym stwórzysz swoje imperium">
+    <meta name="theme-color" content="#ec0300">
+
+    <meta property="og:site_name" content="KingMc.PL - Serwer minecraft w którym stwórzysz swoje imperium">
+    <meta property="og:title" content="KingMc.PL">
+    <meta property="og:description" content="KingMc.PL - Serwer minecraft w którym stwórzysz swoje imperium">
+    <meta property="og:url" content="https://KingMc.pl">
+    <meta property="og:type" content="website">
+    <meta name="og:locale" content="pl_PL">
+    <meta name="og:type" content="website">
+
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+    <link rel="stylesheet" href="css/sweetalert2.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    </head>    <body>
+        
+<div class="bg-blur">
+    <aside>
+        <span class="close" onclick="toggleSidebar(false)">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.9907 20.7477C1.47584 20.7776 0.969494 20.6064 0.578434 20.2703C-0.192811 19.4944 -0.192811 18.2414 0.578434 17.4656L17.4662 0.577768C18.2684 -0.172844 19.5271 -0.131118 20.2777 0.671045C20.9564 1.39644 20.996 2.51138 20.3703 3.28302L3.38306 20.2703C2.99704 20.6016 2.49882 20.7724 1.9907 20.7477V20.7477Z" fill="white"/>
+            <path d="M18.8586 20.7477C18.3368 20.7455 17.8367 20.5384 17.4662 20.1709L0.578396 3.283C-0.136123 2.44861 -0.0389809 1.1929 0.795411 0.478311C1.54013 -0.159437 2.63844 -0.159437 3.38309 0.478311L20.3703 17.3661C21.1723 18.1169 21.2138 19.3757 20.463 20.1777C20.4331 20.2096 20.4022 20.2405 20.3703 20.2703C19.9544 20.632 19.407 20.8049 18.8586 20.7477V20.7477Z" fill="white"/>
+            </svg>
+        </span>
+        <div class="aside-logo">
+            <img src="images/logo.png">
+            <h3>KINGMC.PL</h3>
+        </div>
+        <div>
+            <h3>PODSTRONY</h3>
+            <a href="https://kingmc.pl/shop#home">Strona Główna</a>
+            <a href="https://kingmc.pl/shop#tryby">Tryby</a>
+            <a href="https://kingmc.pl/shop#tryby">Sklep</a>
+        </div>
+        <div>
+            <h3>Social Media</h3>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://facebook.com">Discord</a>
+            <a href="https://facebook.com">Youtube</a>
+        </div>
+        <div class="aside-online">
+            <div class="online-dot"></div>
+            <p>OSÓB ONLINE: <span id="rest1"></span></p>
+        </div>
+
+    </aside>
+</div>
+
+
+<nav data-aos="fade-down" data-aos-duration="1000">
+
+    <a class="logo-container" href="https://kingmc.pl/shop">
+        <div>
+            <img src="images/logo.png">
+             <span>KINGMC.PL</span>
+        </div>
+    </a>
+
+    <div class="links">
+        <a class="active" href="https://kingmc.pl/shop#home">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="460.298px" height="460.297px" viewBox="0 0 460.298 460.297" style="enable-background:new 0 0 460.298 460.297;" xml:space="preserve">
+<g>
+    <path d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041
+        c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629
+        c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939
+        z"/>
+    <path d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816
+        c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245
+        c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136
+        c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998
+        L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125
+        c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"/>
+</g>
+
+            </svg> STRONA GŁÓWNA
+        </a>
+        <a href="https://kingmc.pl/shop#tryby">
+            <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25.001px" viewBox="0 0 25 25.001" style="enable-background:new 0 0 25 25.001;" xml:space="preserve">
+                <g>
+                <path d="M24.38,10.175l-2.231-0.268c-0.228-0.851-0.562-1.655-0.992-2.401l1.387-1.763c0.212-0.271,0.188-0.69-0.057-0.934
+                    l-2.299-2.3c-0.242-0.243-0.662-0.269-0.934-0.057l-1.766,1.389c-0.743-0.43-1.547-0.764-2.396-0.99L14.825,0.62
+                    C14.784,0.279,14.469,0,14.125,0h-3.252c-0.344,0-0.659,0.279-0.699,0.62L9.906,2.851c-0.85,0.227-1.655,0.562-2.398,0.991
+                    L5.743,2.455c-0.27-0.212-0.69-0.187-0.933,0.056L2.51,4.812C2.268,5.054,2.243,5.474,2.456,5.746L3.842,7.51
+                    c-0.43,0.744-0.764,1.549-0.991,2.4l-2.23,0.267C0.28,10.217,0,10.532,0,10.877v3.252c0,0.344,0.279,0.657,0.621,0.699l2.231,0.268
+                    c0.228,0.848,0.561,1.652,0.991,2.396l-1.386,1.766c-0.211,0.271-0.187,0.69,0.057,0.934l2.296,2.301
+                    c0.243,0.242,0.663,0.269,0.933,0.057l1.766-1.39c0.744,0.43,1.548,0.765,2.398,0.991l0.268,2.23
+                    c0.041,0.342,0.355,0.62,0.699,0.62h3.252c0.345,0,0.659-0.278,0.699-0.62l0.268-2.23c0.851-0.228,1.655-0.562,2.398-0.991
+                    l1.766,1.387c0.271,0.212,0.69,0.187,0.933-0.056l2.299-2.301c0.244-0.242,0.269-0.662,0.056-0.935l-1.388-1.764
+                    c0.431-0.744,0.764-1.548,0.992-2.397l2.23-0.268C24.721,14.785,25,14.473,25,14.127v-3.252
+                    C25.001,10.529,24.723,10.216,24.38,10.175z M12.501,18.75c-3.452,0-6.25-2.798-6.25-6.25s2.798-6.25,6.25-6.25
+                    s6.25,2.798,6.25,6.25S15.954,18.75,12.501,18.75z"/>
+                </g>
+
+            </svg> TRYBY
+        </a>
+        <a href="https://kingmc.pl/shop#tryby">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+    <path d="M511.52,172.128L482.56,56.224C479.008,41.984,466.208,32,451.52,32H60.512c-14.688,0-27.488,9.984-31.072,24.224
+        L0.48,172.128C0.16,173.376,0,174.688,0,176c0,44.096,34.08,80,76,80c24.352,0,46.08-12.128,60-30.944
+        C149.92,243.872,171.648,256,196,256s46.08-12.128,60-30.944C269.92,243.872,291.616,256,316,256c24.384,0,46.08-12.128,60-30.944
+        C389.92,243.872,411.616,256,436,256c41.92,0,76-35.904,76-80C512,174.688,511.84,173.376,511.52,172.128z"/>
+</g>
+<g>
+    <path d="M436,288c-21.792,0-42.496-6.656-60-18.816c-35.008,24.352-84.992,24.352-120,0c-35.008,24.352-84.992,24.352-120,0
+        C118.496,281.344,97.792,288,76,288c-15.712,0-30.528-3.68-44-9.952V448c0,17.664,14.336,32,32,32h128V352h128v128h128
+        c17.664,0,32-14.336,32-32V278.048C466.528,284.32,451.712,288,436,288z"/>
+</g>
+
+
+
+            </svg> SKLEP
+        </a>
+    </div>
+
+    <div class="online">
+        <div class="online-dot"></div>
+        <p>OSÓB ONLINE: <span id="rest2"></span></p>
+    </div>
+
+    <div class="hamburger" onclick="toggleSidebar(true)">
+        <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.7499 19.0002H1.58334C0.708854 19.0002 0 18.2913 0 17.4168C0 16.5424 0.708854 15.8335 1.58334 15.8335H23.75C24.6244 15.8335 25.3333 16.5424 25.3333 17.4168C25.3332 18.2913 24.6244 19.0002 23.7499 19.0002Z" fill="white"/>
+            <path d="M23.7499 11.0831H1.58334C0.708854 11.0831 0 10.3743 0 9.49984C0 8.62541 0.708854 7.9165 1.58334 7.9165H23.75C24.6244 7.9165 25.3333 8.62536 25.3333 9.49984C25.3333 10.3743 24.6244 11.0831 23.7499 11.0831Z" fill="white"/>
+            <path d="M23.7499 3.16668H1.58334C0.708854 3.16668 0 2.45782 0 1.58334C0 0.708854 0.708854 0 1.58334 0H23.75C24.6244 0 25.3333 0.708854 25.3333 1.58334C25.3333 2.45782 24.6244 3.16668 23.7499 3.16668Z" fill="white"/>
+            </svg>
+
+    </div>
+
+</nav>
+
+
+<section class="home" data-nr="0" id="home">
+    <img class="bg" src="images/bg.jpg">
+    
+
+    <div class="home-content">
+        <h1 data-aos="fade-right" data-aos-duration="1000">KingMC.PL</h1>
+        <div class="lines">
+            <div class="line" data-aos="fade-left" data-aos-duration="600"></div>
+            <div class="line" data-aos="fade-left" data-aos-duration="800"></div>
+            <div class="line" data-aos="fade-left" data-aos-duration="1000"></div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1200" class="home-h2">
+            <h2>Twoje Królestwo Gry!</h2>
+        </div>
+        <div class="buttons" data-aos="fade-up" data-aos-duration="1000">
+            <button onclick="window.location='#tryby'"><div>SKLEP</div></button>
+            <button><div class="copy-ip">IP</div></button>
+        </div>
+    </div>
+</section>
+
+<section class="tryby" data-nr="1" id="tryby">
+    <img src="images/bg2.jpg">
+
+    <div class="tryby-headline">
+        <h2 data-aos="fade-up" data-aos-duration="1000">TRYB SERWERA</h2>
+        <h3 data-aos="fade-up" data-aos-duration="1200">Wybierz tryb serwera, z którego chcesz zobaczyć oferty...</h3>
+    </div>
+
+    <div class="tryby-grid">
+                        <div class="tryby-tile" onclick="location.href='https://kingmc.pl/shop/689aba5f-81ed-47b5-a09a-8d71245b4a52';">
+            <img src="images/xgR3CXu.png">
+            <p>BOXPVP</p>
+        </div>
+                <div class="tryby-tile" onclick="location.href='https://kingmc.pl/shop/c763deef-1b5d-4676-8a2d-3fab8edd98f6';">
+            <img src="images/y2FQJRK.png">
+            <p>CHESTPVP</p>
+        </div>
+                <div class="tryby-tile" onclick="location.href='https://kingmc.pl/shop/5af7d10d-35f5-421b-a1fe-dd40f0724ad1';">
+            <img src="images/bxcN526.png">
+            <p>ONEBLOCK</p>
+        </div>
+                <div class="tryby-tile" onclick="location.href='https://kingmc.pl/shop/497b2cba-2341-4384-b5f2-140b60d2dbd0';">
+            <img src="images/sAeFwQ7.png">
+            <p>SURVIVAL</p>
+        </div>
+                <div class="tryby-tile" onclick="location.href='https://kingmc.pl/shop/22d1ec32-1cd4-420a-b6f9-45e37aeef9cf';">
+            <img src="images/fxfRXzP.png">
+            <p>MEGADROP</p>
+        </div>
+                <div class="tryby-tile" onclick="location.href='https://kingmc.pl/shop/a2003df9-0530-43db-b1b1-8ff82ff6e1d3';">
+            <img src="images/FjGsTbj.png">
+            <p>ANARCHIA SMP</p>
+        </div>
+                <div class="tryby-tile" onclick="location.href='https://kingmc.pl/shop/8087084d-2540-452e-a15d-e22135d86217';">
+            <img src="images/EBo3bi5.png">
+            <p>DROP SMP</p>
+        </div>
+                <div class="tryby-tile" onclick="location.href='https://kingmc.pl/shop/7d7422cc-e540-4dc9-a03c-aa7b7156d82f';">
+            <img src="images/fETx5yd.png">
+            <p>PLEMIE SMP</p>
+        </div>
+                    </div>
+</section>
+        <footer>
+    <div class="footer-logo-container">
+        <div>
+            <img src="images/logo.png">
+        </div>
+    </div>
+    <div class="footer-content">
+        <div class="upper">
+            <div class="upper-col">
+                <button><div>PRZEJDZ DO</div></button>
+                <div class="footer-links">
+                    <a href="https://kingmc.pl/shop">STRONA GŁÓWNA</a>
+                    <a href="https://kingmc.pl/shop#tryby">TRYBY</a>
+                    <a href="https://kingmc.pl/tos">REGULAMIN</a>
+                </div>
+            </div>
+            <div class="upper-col">
+                <button><div>SOCIAL MEDIA</div></button>
+                <div class="footer-links">
+                    <a href="https://fb.kingmc.pl">FACEBOOK</a>
+                    <a href="https://dc.kingmc.pl">DISCORD</a>
+                    <a href="https://yt.kingmc.pl">YOUTUBE</a>
+                </div>
+            </div>
+        </div>
+        <div class="lower">
+            © 2022 KINGMC.PL & SPACECODE.PL | WSZELKIE PRAWA ZASTRZEŻONE
+        </div>
+    </div>
+</footer>        <script src="js/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = 'https://kingmc.pl';window.livewire_token = 'DrtiIvYf4mnF7Jmtgpb4wBpL7jHqH7i2QOnkMse2';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+                <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="js/sweetalert2.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous">
+</script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/sidebar.js" type="text/javascript"></script>
+<script src="js/navbar.js" type="text/javascript"></script>
+<script src="js/khaller.js" type="text/javascript"></script>
+<script>
+var url = "https://api.minetools.eu/ping/kingmc.pl";
+$.getJSON(url, function(r) {
+    if (r.error) {
+        $('#rest1').html('OFF');
+        $('#rest2').html('OFF');
+        return false;
+    } else {
+        $('#rest1').html('' + r.players.online + '');
+        $('#rest2').html('' + r.players.online + '');
+
+    }
+});
+
+var copyConfig = {
+    text: "SKOPIOWANO!",
+    time: 5,
+    url: "kingmc.pl",
+    classAdd: "cop",
+};
+var copyIp = document.querySelector(".copy-ip");
+if (copyIp != null) {
+    copyIp.addEventListener("click", (e) => {
+        var lastText = copyIp.innerText;
+        copyIp.innerText = "SKOPIOWANO!";
+        copyIp.classList.add(copyConfig.classAdd);
+        var el = document.createElement("textarea");
+        el.value = copyConfig.url;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+        setTimeout(() => {
+            copyIp.innerText = lastText;
+            copyIp.classList.remove(copyConfig.classAdd);
+        }, copyConfig.time * 1000);
+    });
+}
+</script>
+            </body>
+</html>

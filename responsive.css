@@ -1,0 +1,554 @@
+/* ================= GENERAL ================ */
+
+.bg-blur {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    z-index: 101;
+    display: none;
+    transition: .3s background;
+}
+
+aside {
+    position: fixed;
+    transition: .3s;
+    height: 100%;
+    width: 90%;
+    right: -100%;
+    background: #2A1C1C;
+    border-left: 1px solid #9E7979;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+aside > div {
+    text-align: center;
+    padding: 4vh 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside > div:not(:nth-of-type(4)) {
+    border-bottom: 1px solid #593D3D;
+}
+
+aside > div h3 {
+    margin-bottom: 3vw;
+}
+
+aside > div a {
+    margin-bottom: 2vw;
+    color:#9E7979;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.aside-logo img {
+    width: 15vw;
+}
+
+.aside-online {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-online .online-dot {
+    width: 3vw;
+    height: 3vw;
+    margin: 2vw;
+}
+
+.aside-online a {
+    margin-bottom: 0px;
+}
+
+.close {
+    width: 8vw;
+    height: 8vw;
+    position:absolute;
+    display: grid;
+    place-content: center;
+    right: 7vw;
+    top: 7vw;
+}
+
+.close svg{
+    width: 6vw;
+    height: 6vw;
+}
+
+/* --------------- */
+
+.hamburger {
+    display: none;
+}
+
+
+@media only screen and (max-width: 444px) {
+
+    * {
+        font-size: 5vw;
+    }
+
+
+    /* ============ NAVBAR ============= */
+
+    .links, .online {
+        display: none;
+    }
+    
+    .hamburger {
+        display: grid;
+        place-content: center;
+    }
+
+    .hamburger svg {
+        width: 7vw;
+    }
+    
+    nav .logo-container {
+        padding: 0 5vw;
+    }
+    .logo-container > div {
+        gap: 3vw;
+    }
+
+    nav .logo-container div img {
+        width: 10vw; 
+        height: auto;
+    }
+   
+    /* =========== HOME ============== */
+
+    .home .bg {
+       object-position: -300px;
+       filter: brightness(1)
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        align-items: flex-start;
+        width: 100%;
+        transform: translateY(5vw);
+    }
+
+    .home-content h1 {
+        font-size: 17vw;
+        font-weight: 900;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .lines {
+        gap: 4vw;
+        transform: translateY(-7vw) translateX(1vw);
+    }
+    
+    .line {
+        width: 7vw;
+        height: 1vw;
+        box-shadow: 0px 0px 5vw rgba(255,255,255,1);
+    }
+
+    .home-content h2 {
+        font-size: 7vw;
+        text-align: center;
+        transform: translateY(-10vw);
+    }
+
+    
+    .home-content .buttons{
+        width: 100%;
+        justify-content: space-between;
+        gap: none;
+        padding: 0 6vw;
+    }
+    
+    .home-content .buttons button {
+        height: 15vw;
+    }
+
+    .home-content .buttons button div {
+        font-size:5vw;
+    }
+    
+    .home-content .buttons button:nth-of-type(1) {
+        width: 40vw;
+    }
+    
+    .home-content .buttons button:nth-of-type(2) {
+        width: 25vw;
+    }
+
+
+    /* ================ TRYBY =============== */
+
+
+    .tryby {
+        height: auto;
+        padding-bottom: 10vh;
+    }
+
+    .tryby-headline h2 {
+        font-size: 11vw;
+    }
+    
+    .tryby-headline h3{
+        font-size: 5vw;
+    }
+
+    .tryby-grid, .sklep-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3vw;
+    }
+
+    .tryby-tile, .sklep-tile {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .tryby-tile p, .sklep-tile p {
+        color: #7a7274;
+        font-weight: 500;
+        font-size: 5vw;
+        transition: .3s;
+        transform: translateY(-4.5vw);
+    
+    }
+    
+    .tryby-tile img, .sklep-tile img {
+        width: auto;
+        height: 18vh;
+        transform: translateY(6.5vw);
+    }
+
+      /* ==============================================
+    ==================== SKLEP ======================
+    ================================================= */
+
+    
+    .sklep-headline {
+        padding: 35vw 0 6vw 0;
+    }
+    
+    
+    .sklep-headline h2 {
+        font-size: 11vw;
+    }
+    
+    .sklep-headline h3{
+        font-size: 5vw;
+    }
+    
+    .sklep-tile::after {
+        bottom: 30%;
+    }
+
+
+
+
+    /* ================== FOOTER ================ */
+
+    footer {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 12vw;
+        padding-top:8vh;
+    }
+
+    .footer-logo-container {
+        transform: skew(30deg);
+        height: auto;
+        width: 12vw;
+        background:none;
+    }
+
+    .footer-logo-container > div img {
+        width: 30vw;
+    }
+
+    .footer-content {
+        gap: 15vw;
+    }
+
+    .footer-content .upper {
+        display: flex;
+        gap: 10vw;
+        margin-top: 2vw;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-content .upper .upper-col {
+        gap: 4vw;
+        width: 100%;
+        align-items: center;
+    }
+
+        
+    .upper-col button {
+        width: 40vw;
+        height: 15vw;
+    }
+
+        
+    .upper-col button div {
+        font-size: 5vw;
+    }
+
+    .lower {
+        font-size: 4vw;
+        padding: 10vw 0;
+    }
+    
+
+
+}
+
+
+
+@media only screen and (max-width: 1000px) and (min-width: 445px){
+
+    * {
+        font-size: 3.5vw;
+    }
+
+
+    /* ============ NAVBAR ============= */
+
+    .links, .online {
+        display: none;
+    }
+    
+    .hamburger {
+        display: grid;
+        place-content: center;
+    }
+
+    .hamburger svg {
+        width: 6vw;
+        height: auto;
+    }
+    
+    nav .logo-container {
+        padding: 0 5vw;
+    }
+    .logo-container > div {
+        gap: 2vw;
+    }
+
+    nav .logo-container div img {
+        width: 9vw; 
+        height: auto;
+    }
+
+    
+   
+    /* =========== HOME ============== */
+
+    .home .bg {
+       object-position: -200px;
+       filter: brightness(1)
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        align-items: flex-start;
+        width: 100%;
+        transform: translateY(5vw);
+    }
+
+    .home-content h1 {
+        font-size: 14vw;
+        font-weight: 900;
+        text-align: left;
+      
+    }
+
+    .lines {
+        gap: 4vw;
+        transform: translateY(-8vw) translateX(0vw);
+    }
+    
+    .line {
+        width: 5vw;
+        height: .8vw;
+        box-shadow: 0px 0px 4vw rgba(255,255,255,1);
+    }
+
+    .home-content h2 {
+        font-size: 5vw;
+        text-align: center;
+        transform: translateY(-12vw);
+    }
+
+    
+    .home-content .buttons{
+        width: 100%;
+        justify-content: flex-start;
+        gap: 5vw;
+        padding: 0 5vw;
+    }
+    
+    .home-content .buttons button {
+        height: 15vw;
+    }
+
+    .home-content .buttons button div {
+        font-size:4vw;
+    }
+    
+    .home-content .buttons button:nth-of-type(1) {
+        width: 35vw;
+    }
+    
+    .home-content .buttons button:nth-of-type(2) {
+        width: 20vw;
+    }
+
+
+    /* ================ TRYBY =============== */
+
+
+    .tryby {
+        height: auto;
+        padding-bottom: 10vh;
+    }
+
+    .tryby-headline h2 {
+        font-size: 10vw;
+    }
+    
+    .tryby-headline h3{
+        font-size: 5vw;
+    }
+
+    .tryby-grid, .sklep-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3vw;
+        margin: 5vw 0;
+    }
+
+    .tryby-tile, .sklep-tile {
+        width: 100%;
+        height: 40vw;
+    }
+
+    .tryby-tile p, .sklep-tile p {
+        color: #7a7274;
+        font-weight: 500;
+        font-size: 3.5vw;
+        transition: .3s;
+        transform: translateY(-4.5vw);
+    
+    }
+    
+    .tryby-tile img, .sklep-tile img {
+        width: 20vw;
+        height: auto;
+        transform: translateY(6.5vw);
+    }
+
+    
+    /* ==============================================
+    ==================== SKLEP ======================
+    ================================================= */
+
+    
+    .sklep-headline {
+        padding: 25vw 0 6vw 0;
+    }
+    
+    
+    .sklep-headline h2 {
+        font-size: 10vw;
+    }
+    
+    .sklep-headline h3{
+        font-size: 5vw;
+    }
+    
+    .sklep-tile::after {
+        bottom: 30%;
+    }
+
+
+
+    /* ================== FOOTER ================ */
+
+    footer {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        gap: 12vw;
+        padding-top:10vh;
+    }
+
+    .footer-logo-container {
+        transform: skew(30deg);
+        height: auto;
+        
+        background:none;
+    }
+
+    .footer-logo-container > div img {
+        width: 22vw;
+    }
+
+    .footer-content {
+        gap: 10vw;
+    }
+
+    .footer-content .upper {
+        display: flex;
+        gap: 6vw;
+        margin-top: 2vw;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-content .upper .upper-col {
+        gap: 3vw;
+        width: 100%;
+        align-items: center;
+    }
+
+        
+    .upper-col button {
+        width: 40vw;
+        height: 15vw;
+    }
+
+        
+    .upper-col button div {
+        font-size: 4vw;
+    }
+
+    .lower {
+        font-size: 3.5vw;
+        padding: 10vw 0;
+    }
+    
+
+
+}
